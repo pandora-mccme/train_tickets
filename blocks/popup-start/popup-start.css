@@ -6,3 +6,9 @@
   background-repeat: no-repeat;
   border-radius: calc(100vw / 60);
 }
+
+@media screen and (min-width: 1200px){
+  .popup-start {
+    border-radius: 20px;
+  }
+}
