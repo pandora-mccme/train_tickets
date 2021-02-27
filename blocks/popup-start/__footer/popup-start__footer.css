@@ -1,0 +1,13 @@
+.popup-start__footer {
+  width: 60%;
+  background-color: #A60A0A;
+  border-radius: 10px;
+  padding: calc(100vw / (1200 / 14)) 0;
+  margin:0 auto;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-start__footer {
+    padding:14px 0;
+  }
+}

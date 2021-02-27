@@ -1,0 +1,15 @@
+.popup-cities__city {
+  background: #4D7FFE;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(100vw / (1200 / 18));
+  line-height: 1.17;
+  text-align: center;
+  color: #E9E9E9;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-cities__city {
+    font-size: 18px;
+  }
+}

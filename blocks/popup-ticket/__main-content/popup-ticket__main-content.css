@@ -1,0 +1,14 @@
+.popup-ticket__main-content {
+  height: calc(100vw / (1200 / 286));
+  background-color: #F9F9F9;
+  border-radius: calc(100vw / 120);
+  margin: calc(100vw / (1200 / 15)) calc(100vw / (1200 / 15)) 0;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-ticket__main-content {
+    height: 286px;
+    border-radius: 10px;
+    margin: 15px 15px 0;
+  }
+}

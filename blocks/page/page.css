@@ -1,0 +1,29 @@
+.page {
+  font-family: Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 1200px;
+  max-height: 800px;
+  min-width: 320px;
+  min-height: calc(320px / 1.5);
+  height: calc(100vw / 1.5);
+  padding: calc(100vw / 7.55) 0 0 calc(100vw / 11.9);
+  background-image: url(../../images/screen.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1200px) {
+  .page {
+    padding: 160px 336px 160px 102px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page {
+    padding: 42px 0 0 27px;
+  }
+}

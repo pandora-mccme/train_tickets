@@ -1,0 +1,9 @@
+.popup-cities__footer_small_padding {
+  padding: calc(100vw / 120) 0;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-cities__footer_small_padding {
+    padding: 10px 0;
+  }
+}

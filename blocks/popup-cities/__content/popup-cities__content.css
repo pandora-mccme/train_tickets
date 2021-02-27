@@ -1,0 +1,13 @@
+.popup-cities__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(100vw / 100) calc(100vw / 240);
+  padding: 0 calc(100vw / (1200 / 27));
+}
+
+@media screen and (min-width: 1200px){
+  .popup-cities__content {
+    padding: 0 27px;
+    gap: 12px 5px;
+  }
+}

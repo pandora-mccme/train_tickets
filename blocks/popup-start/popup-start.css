@@ -1,0 +1,8 @@
+.popup-start {
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url(../../images/rectangle.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: calc(100vw / 60);
+}

@@ -1,0 +1,16 @@
+.popup-cities__main-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(100vw / 50);
+  line-height: 1.17;
+  text-align: center;
+  margin: calc(100vw / (1200 / 9)) auto calc(100vw / (1200 / 14));
+  color: #000;
+}
+
+@media screen and (min-width: 1200px) {
+  .popup-cities__main-title {
+    font-size: 24px;
+    margin: 9px auto 14px;
+  }
+}

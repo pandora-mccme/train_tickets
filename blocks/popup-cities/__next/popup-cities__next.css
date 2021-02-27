@@ -1,0 +1,13 @@
+.popup-cities__next {
+  color: #E9E9E9;
+  background-color: #D75454;
+  padding: 0 calc(100vw / (1200 / 18));
+  margin-right: calc(100vw / (1200 / 64));
+}
+
+@media screen and (min-width: 1200px){
+  .popup-cities__next {
+    padding: 0 18px;
+    margin-right: 64px;
+  }
+}

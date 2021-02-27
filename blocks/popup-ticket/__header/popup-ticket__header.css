@@ -1,0 +1,13 @@
+.popup-ticket__header {
+  width: 100%;
+  height: calc(100vw / (1200 / 112));
+  background-color: #D8D8D8;
+  border-radius: calc(100vw / 60) calc(100vw / 60) 0 0;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-ticket__header {
+    height: 112px;
+    border-radius: 20px 20px 0 0;
+  }
+}

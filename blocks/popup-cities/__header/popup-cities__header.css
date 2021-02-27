@@ -1,0 +1,11 @@
+.popup-cities__header {
+  width: 100%;
+  background-color: #D8D8D8;
+  border-radius: calc(100vw / 60) calc(100vw / 60) 0 0;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-cities__header {
+    border-radius: 20px 20px 0 0;
+  }
+}

@@ -1,0 +1,14 @@
+.button {
+  border-radius: calc(100vw / 120);
+  height: calc(100vw / (1200 / 48));;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px){
+  .button {
+    border-radius: 10px;
+    height: 48px;
+  }
+}

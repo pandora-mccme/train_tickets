@@ -1,0 +1,11 @@
+.popup-cities__main {
+  width: 100%;
+  height: calc(100vw / (1200 / 358));
+  background-color: #C4C4C4;
+}
+
+@media screen and (min-width: 1200px) {
+  .popup-cities__main {
+    height: 358px;
+  }
+}

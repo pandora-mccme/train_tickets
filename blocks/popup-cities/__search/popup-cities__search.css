@@ -1,0 +1,11 @@
+.popup-cities__search {
+  color: #E9E9E9;
+  background-color: #3559B5;
+  padding: 0 calc(100vw / (1200 / 16));
+}
+
+@media screen and (min-width: 1200px){
+  .popup-cities__search {
+    padding: 0 16px;
+  }
+}

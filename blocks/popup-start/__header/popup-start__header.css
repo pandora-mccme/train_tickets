@@ -1,0 +1,13 @@
+.popup-start__header {
+  width: 100%;
+  padding: calc(100vw / 50) 0;
+  margin-bottom: calc(100vw / 6);
+  background-color: #D8D8D8;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-start__header {
+    padding: 24px 0;
+    margin-bottom: 200px
+  }
+}

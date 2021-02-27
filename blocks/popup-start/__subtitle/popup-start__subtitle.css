@@ -1,0 +1,16 @@
+.popup-start__subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(100vw / (1200 / 18));
+  line-height: 1.17;
+  text-align: center;
+  margin: 0 auto;
+  cursor: default;
+  color: #E9E9E9;
+}
+
+@media screen and (min-width: 1200px) {
+  .popup-start__subtitle {
+    font-size: 18px;
+  }
+}

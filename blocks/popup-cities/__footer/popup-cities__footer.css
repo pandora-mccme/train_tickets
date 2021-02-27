@@ -1,0 +1,20 @@
+.popup-cities__footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #C4C4C4;
+  border-radius: 0 0 calc(100vw / 60) calc(100vw / 60);
+  padding: calc(100vw / 60) 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(100vw / (1200 / 18));
+  line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-cities__footer {
+    border-radius: 0 0 20px 20px;
+    padding: 20px 0;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,9 @@
+.popup-cities__footer-left {
+  margin-left: calc(100vw / (1200 / 64));
+}
+
+@media screen and (min-width: 1200px){
+  .popup-cities__footer-left {
+    margin-left: 64px;
+  }
+}

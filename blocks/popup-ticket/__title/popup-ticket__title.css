@@ -1,0 +1,15 @@
+.popup-ticket__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(100vw / (1200 / 24));
+  line-height: 1.17;
+  color: #A60A0A;
+  margin: calc(100vw / (1200 / 14)) 0 0 calc(100vw / (1200 / 23));
+}
+
+@media screen and (min-width: 1200px){
+  .popup-ticket__title {
+    font-size: 24px;
+    margin: 14px 0 0 23px;
+  }
+}

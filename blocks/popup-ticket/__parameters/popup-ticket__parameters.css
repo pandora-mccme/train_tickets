@@ -1,0 +1,23 @@
+.popup-ticket__parameters {
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(100vw / (1200 / 17));
+  line-height: 1.17;
+  color: #6C6C6C;
+  margin: calc(100vw / 600) 0 0 calc(100vw / (1200 / 23));
+}
+
+.popup-ticket__parameters:last-child {
+  margin-bottom: calc(100vw / (1200 / 7));
+}
+
+@media screen and (min-width: 1200px){
+  .popup-ticket__parameters {
+    font-size: 17px;
+    margin: 2px 0 0 23px;
+  }
+
+  .popup-ticket__parameters:last-child {
+    margin-bottom: 7px;
+  }
+}

@@ -1,0 +1,16 @@
+.popup {
+  display: none;
+  width: calc(100vw / 1.57);
+  height: calc(100vw / 2.47);
+  min-width: 204px;
+  min-height: 129px;
+  max-width: 762px;
+  max-height: 481px;
+  border-radius: calc(100vw / 60);
+}
+
+@media screen and (min-width: 1200px){
+  .popup {
+    border-radius: 20px;
+  }
+}
