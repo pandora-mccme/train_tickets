@@ -1,0 +1,9 @@
+.popup-ticket__one-full_last-child {
+  margin-left: calc(100vw / (1200 / 44));
+}
+
+@media screen and (min-width: 1200px) {
+  .popup-ticket__one-full_last-child {
+    margin-left: 44px;
+  }
+}

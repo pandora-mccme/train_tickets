@@ -1,0 +1,9 @@
+.popup-ticket__one-full-text_margin_none {
+  margin: 0 0 calc(100vw / 300);
+}
+
+@media screen and (min-width: 1200px){
+  .popup-ticket__one-full-text_margin_none {
+    margin: 0 0 4px;
+  }
+}

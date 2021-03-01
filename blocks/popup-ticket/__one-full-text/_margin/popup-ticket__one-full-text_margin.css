@@ -1,0 +1,9 @@
+.popup-ticket__one-full-text_margin {
+  margin-bottom: calc(100vw / (1200 / 21));
+}
+
+@media screen and (min-width: 1200px){
+  .popup-ticket__one-full-text_margin {
+    margin-bottom: 21px;
+  }
+}

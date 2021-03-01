@@ -1,0 +1,31 @@
+.popup-ticket__radio-button {
+  display: inline-block;
+  position: relative;
+  padding-left: calc(100vw / (1200 / 35));
+  cursor: pointer;
+}
+
+.popup-ticket__radio-button::before {
+  content: "";
+  display: inline-block;
+  width: calc(100vw / 60);
+  height: calc(100vw / 60);
+  border-radius: calc(100vw / 120);
+  position: absolute;
+  left: calc(100vw / (1200 / 9));
+  top: 0;
+  background-color: #F9F9F9;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-ticket__radio-button {
+    padding-left: 35px;
+  }
+
+  .popup-ticket__radio-button::before {
+    width: 20px;
+    height: 20px;
+    left: 9px;
+    border-radius: 10px;
+  }
+}

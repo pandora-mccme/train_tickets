@@ -1,4 +1,5 @@
 .popup-ticket__main-content {
+  display: flex;
   height: calc(100vw / (1200 / 286));
   background-color: #F9F9F9;
   border-radius: calc(100vw / 120);

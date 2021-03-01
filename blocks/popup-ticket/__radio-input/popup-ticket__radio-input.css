@@ -1,0 +1,17 @@
+.popup-ticket__radio-input {
+  display: none;
+}
+
+.popup-ticket__radio-input:checked + .popup-ticket__radio-button::before{
+  line-height: 0.5;
+  text-align: center;
+  content: "\2022";
+  color: #3559B5;
+  font-size: calc(100vw / (1200 / 45));
+}
+
+@media screen and (min-width: 1200px){
+  .popup-ticket__radio-input:checked + .popup-ticket__radio-button::before {
+    font-size: 45px;
+  }
+}

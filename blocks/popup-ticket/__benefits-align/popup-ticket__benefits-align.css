@@ -1,0 +1,11 @@
+.popup-ticket__benefits-align {
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100vw / (1200 / 458));
+}
+
+@media screen and (min-width: 1200px){
+  .popup-ticket__benefits-align {
+    width: 458px;
+  }
+}

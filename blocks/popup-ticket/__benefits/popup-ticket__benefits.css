@@ -1,0 +1,22 @@
+.popup-ticket__benefits {
+  height: calc(100vw / (1200 / 35));
+  background-color: #3559B5;
+  border-radius: calc(100vw / 120);
+  border: none;
+  padding: calc(100vw / (1200 / 7)) calc(100vw / (1200 / 4));
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(100vw / (1200 / 18));
+  line-height: 1.17;
+  color: #E9E9E9;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .popup-ticket__benefits {
+    height: 35px;
+    border-radius: 10px;
+    padding: 7px 4px;
+    font-size: 18px;
+  }
+}

@@ -8,55 +8,81 @@
   <script src="scripts/index.js?v1.0" defer></script>
 </head>
 <body>
-  <main class="page">
-    <section class="popup popup-start popup_opened">
-      <div class="popup-start__header">
-        <h1 class="popup-start__title">Вас приветствует пассажирская транспортная компания </h1>
+<main class="page">
+  <section class="popup popup-start popup_opened">
+    <div class="popup-start__header">
+      <h1 class="popup-start__title">Вас приветствует пассажирская транспортная компания </h1>
+    </div>
+    <div class="popup-start__footer">
+      <p class="popup-start__subtitle">Коснитесь экрана для работы с терминалом</p>
+    </div>
+  </section>
+  <section class="popup popup-cities">
+    <div class="popup-cities__header">
+      <h2 class="popup-cities__title">Баранур</h2>
+    </div>
+    <div class="popup-cities__main">
+      <p class="popup-cities__main-title">Пункт назначения</p>
+      <div class="popup-cities__content"></div>
+    </div>
+    <div class="popup-cities__footer">
+      <div class="popup-cities__footer-left">
+        <button type="button" class="button popup-cities__previous button_disabled disabled" aria-label="#">Предыдущие</button>
+        <button type="button" class="button popup-cities__search" aria-label="#">Поиск</button>
       </div>
-      <div class="popup-start__footer">
-        <p class="popup-start__subtitle">Коснитесь экрана для работы с терминалом</p>
-      </div>
-    </section>
-    <section class="popup popup-cities">
-      <div class="popup-cities__header">
-        <h2 class="popup-cities__title">Баранур</h2>
-      </div>
-      <div class="popup-cities__main">
-        <p class="popup-cities__main-title">Пункт назначения</p>
-        <div class="popup-cities__content"></div>
-      </div>
-      <div class="popup-cities__footer">
-        <div class="popup-cities__footer-left">
-          <button type="button" class="button popup-cities__previous button_disabled disabled" aria-label="#">Предыдущие</button>
-          <button type="button" class="button popup-cities__search" aria-label="#">Поиск</button>
-        </div>
-        <button type="button" class="button popup-cities__next" aria-label="#">Следующие</button>
-      </div>
-    </section>
-    <section class="popup popup-ticket">
-      <div class="popup-ticket__header">
-        <h2 class="popup-ticket__title">Баранур -> <span class="popup-ticket__city">Веснушкино</span></h2>
-        <p class="popup-ticket__parameters">Льгота: <span class="popup-ticket__benefit">нет</span></p>
-        <p class="popup-ticket__parameters">Тариф: <span class="popup-ticket__rate">ПАССАЖИРСКИЙ</span></p>
-        <p class="popup-ticket__parameters">Дата проезда: <span class="popup-ticket__date">02.03.2021</span></p>
+      <button type="button" class="button popup-cities__next" aria-label="#">Следующие</button>
+    </div>
+  </section>
+  <section class="popup popup-ticket">
+    <div class="popup-ticket__header">
+      <h2 class="popup-ticket__title">Баранур -> <span class="popup-ticket__city">Веснушкино</span></h2>
+      <p class="popup-ticket__parameters">Льгота: <span class="popup-ticket__benefit">нет</span></p>
+      <p class="popup-ticket__parameters">Тариф: <span class="popup-ticket__rate">ПАССАЖИРСКИЙ</span></p>
+      <p class="popup-ticket__parameters">Дата проезда: <span class="popup-ticket__date">02.03.2021</span></p>
 
-      </div>
-      <div class="popup-ticket__main">
-        <div class="popup-ticket__main-content">
-
+    </div>
+    <div class="popup-ticket__main">
+      <div class="popup-ticket__main-content">
+        <div class="popup-ticket__tickets">
+          <div class="popup-ticket__one-full">
+            <p class="popup-ticket__one-full-text popup-ticket__one-full-text_margin">РАЗ ПОЛНЫЙ</p>
+            <p class="popup-ticket__one-full-text">Цена: <span>225,00</span> руб.</p>
+          </div>
+          <div class="popup-ticket__one-full popup-ticket__one-full_last-child">
+            <p class="popup-ticket__one-full-text popup-ticket__one-full-text_margin_none">РАЗ ПОЛНЫЙ</p>
+            <p class="popup-ticket__one-full-text popup-ticket__one-full-text_small">ТУДА ОБРАТНО</p>
+            <p class="popup-ticket__one-full-text">Цена: <span>550,00</span> руб.</p>
+          </div>
+          <div class="popup-ticket__benefits-align">
+            <button type="button" class="popup-ticket__benefits" aria-label="Льготы">Оформить льготный документ</button>
+          </div>
+        </div>
+        <div class="popup-ticket__pricing-plans">
+          <p class="popup-ticket__pricing-plans-text">Тарифы</p>
+          <div class="popup-ticket__type-train">
+            <div class="popup-ticket__passenger popup-ticket__passenger_background">
+              <input class="popup-ticket__radio-input" id="passenger" type="radio" name="type-ticket" value="Пассажирский" checked>
+              <label class="popup-ticket__radio-button" for="passenger">Пассажирский</label>
+            </div>
+            <div class="popup-ticket__passenger popup-ticket__passenger_chek">
+              <input class="popup-ticket__radio-input" id="soon" type="radio" name="type-ticket" value="Скорый">
+              <label class="popup-ticket__radio-button" for="soon">Скорый</label>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="popup-cities__footer popup-cities__footer_small_padding">
-        <div class="popup-cities__footer-left">
-          <button type="button" class="button popup-cities__previous button_disabled disabled" aria-label="#">К выбору станции</button>
-          <button type="button" class="button popup-cities__search" aria-label="#">Выбрать дату</button>
-        </div>
-        <button type="button" class="button popup-cities__next popup-cities__next_color_red" aria-label="#">К оплате</button>
+    </div>
+    <div class="popup-cities__footer popup-cities__footer_small_padding">
+      <div class="popup-cities__footer-left">
+        <button type="button" class="button popup-cities__previous popup-cities__previous_background_color" aria-label="#">К выбору станции</button>
+        <button type="button" class="button popup-cities__search" aria-label="#">Выбрать дату</button>
       </div>
-    </section>
-  </main>
-  <template class="template-cities">
-    <button type="button" class="button popup-cities__city" aria-label="город"></button>
-  </template>
+      <button type="button" class="button popup-cities__next popup-cities__next_color_red" aria-label="#">К оплате</button>
+    </div>
+  </section>
+</main>
+<template class="template-cities">
+  <button type="button" class="button popup-cities__city" aria-label="город"></button>
+</template>
 </body>
 </html>

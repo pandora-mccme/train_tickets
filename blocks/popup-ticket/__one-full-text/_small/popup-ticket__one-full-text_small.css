@@ -1,0 +1,14 @@
+.popup-ticket__one-full-text_small {
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(100vw / (1200 / 14));
+  line-height: 1.17;
+  margin-bottom: calc(100vw / (1200 / 13));
+}
+
+@media screen and (min-width: 1200px){
+  .popup-ticket__one-full-text_small {
+    font-size: 14px;
+    margin-bottom: 13px;
+  }
+}

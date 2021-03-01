@@ -1,0 +1,19 @@
+.popup-ticket__pricing-plans {
+  width: calc(100vw / (1200 / 190));
+  height: calc(100vw / (1200 / 276));
+  border-radius: 0 0 calc(100vw / 120) calc(100vw / 120);
+  background-color: #91AEFA;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(100vw / (1200 / 18));
+  line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px) {
+  .popup-ticket__pricing-plans {
+    width: 190px;
+    height: 276px;
+    border-radius: 0 0 10px 10px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,10 @@
+.popup-ticket__pricing-plans-text {
+  text-align: center;
+  margin: calc(100vw / (1200 / 8)) 0 calc(100vw / 300);
+}
+
+@media screen and (min-width: 1200px){
+  .popup-ticket__pricing-plans-text {
+    margin: 8px 0 4px;
+  }
+}

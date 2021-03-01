@@ -1,0 +1,15 @@
+.popup-ticket__tickets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  width: calc(100vw / (1200 / 524));
+  height: calc(100vw / (1200 / 276));
+}
+
+@media screen and (min-width: 1200px){
+  .popup-ticket__tickets {
+    width: 524px;
+    height: 276px;
+  }
+}

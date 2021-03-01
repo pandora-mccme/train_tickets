@@ -20,6 +20,7 @@
 @import url(../blocks/popup-cities/__footer/_small_padding/popup-cities__footer_small_padding.css);
 @import url(../blocks/popup-cities/__footer-left/popup-cities__footer-left.css);
 @import url(../blocks/popup-cities/__previous/popup-cities__previous.css);
+@import url(../blocks/popup-cities/__previous/_background_color/popup-cities__previous_background_color.css);
 @import url(../blocks/popup-cities/__search/popup-cities__search.css);
 @import url(../blocks/popup-cities/__next/popup-cities__next.css);
 @import url(../blocks/popup-cities/__next/popup-cities__next.css);
@@ -31,4 +32,19 @@
 @import url(../blocks/popup-ticket/__parameters/popup-ticket__parameters.css);
 @import url(../blocks/popup-ticket/__main/popup-ticket__main.css);
 @import url(../blocks/popup-ticket/__main-content/popup-ticket__main-content.css);
-
+@import url(../blocks/popup-ticket/__tickets/popup-ticket__tickets.css);
+@import url(../blocks/popup-ticket/__one-full/popup-ticket__one-full.css);
+@import url(../blocks/popup-ticket/__one-full/_last-child/popup-ticket__one-full_last-child.css);
+@import url(../blocks/popup-ticket/__one-full-text/popup-ticket__one-full-text.css);
+@import url(../blocks/popup-ticket/__one-full-text/_margin/popup-ticket__one-full-text_margin.css);
+@import url(../blocks/popup-ticket/__one-full-text/_margin_none/popup-ticket__one-full-text_margin_none.css);
+@import url(../blocks/popup-ticket/__one-full-text/_small/popup-ticket__one-full-text_small.css);
+@import url(../blocks/popup-ticket/__benefits-align/popup-ticket__benefits-align.css);
+@import url(../blocks/popup-ticket/__benefits/popup-ticket__benefits.css);
+@import url(../blocks/popup-ticket/__pricing-plans/popup-ticket__pricing-plans.css);
+@import url(../blocks/popup-ticket/__pricing-plans-text/popup-ticket__pricing-plans-text.css);
+@import url(../blocks/popup-ticket/__type-train/popup-ticket__type-train.css);
+@import url(../blocks/popup-ticket/__passenger/popup-ticket__passenger.css);
+@import url(../blocks/popup-ticket/__passenger/_background/popup-ticket__passenger_background.css);
+@import url(../blocks/popup-ticket/__radio-input/popup-ticket__radio-input.css);
+@import url(../blocks/popup-ticket/__radio-button/popup-ticket__radio-button.css);

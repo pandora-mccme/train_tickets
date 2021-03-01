@@ -1,0 +1,19 @@
+.popup-ticket__passenger {
+  display: flex;
+  align-items: center;
+  width: calc(100vw / (1200 / 175));
+  height: calc(100vw / (1200 / 39));
+  background-color: #135D92;
+  border-radius: calc(100vw / 120);
+  margin-top: calc(100vw / 100);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-ticket__passenger {
+    width: 175px;
+    height: 39px;
+    border-radius: 10px;
+    margin-top: 12px;
+  }
+}
