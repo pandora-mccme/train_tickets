@@ -1,5 +1,5 @@
 .popup-ticket__passenger {
-  display: flex;
+  display: none;
   align-items: center;
   width: calc(100vw / (1200 / 175));
   height: calc(100vw / (1200 / 39));

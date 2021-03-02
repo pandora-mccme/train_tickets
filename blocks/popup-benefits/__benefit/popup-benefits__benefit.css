@@ -1,0 +1,25 @@
+.popup-benefits__benefit {
+  display: flex;
+  align-items: center;
+  width: calc(100vw / (1200 / 321));
+  height: calc(100vw / (1200 / 48));
+  margin-top: calc(100vw / (1200 / 15));
+  border-radius: calc(100vw / 120);
+  background-color: #145799;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(100vw / (1200 / 24));
+  line-height: 1.17;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .popup-benefits__benefit {
+    width: 321px;
+    height: 48px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,20 @@
+.popup-benefits__button {
+  background-color: #D75454;
+  width: calc(100vw / (1200 / 159));
+  height: calc(100vw / (1200 / 48));
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(100vw / (1200 / 24));
+  line-height: 1.17;
+  color: #fff;
+  margin: 0 calc(100vw / (1200 / 19)) calc(100vw / 100) 0;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-benefits__button {
+    width: 159px;
+    height: 48px;
+    font-size: 24px;
+    margin: 0 19px 12px 0;
+  }
+}

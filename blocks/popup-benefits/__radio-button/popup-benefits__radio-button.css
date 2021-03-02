@@ -1,0 +1,18 @@
+.popup-benefits__radio-button {
+  padding-left: calc(100vw / (1200 / 56));
+}
+
+.popup-benefits__radio-button::before {
+  top: calc(100vw / 300);
+
+}
+
+@media screen and (min-width: 1200px){
+  .popup-benefits__radio-button {
+    padding-left: 56px;
+  }
+
+  .popup-benefits__radio-button::before {
+    top: 4px;
+  }
+}

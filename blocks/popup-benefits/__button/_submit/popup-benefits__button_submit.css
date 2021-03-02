@@ -1,0 +1,10 @@
+.popup-benefits__button_submit {
+  margin: 0 0 calc(100vw / 100) 0;
+  background-color: #8CBB37;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-benefits__button_submit {
+    margin: 0 0 12px 0;
+  }
+}

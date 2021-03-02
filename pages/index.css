@@ -35,6 +35,7 @@
 @import url(../blocks/popup-ticket/__tickets/popup-ticket__tickets.css);
 @import url(../blocks/popup-ticket/__one-full/popup-ticket__one-full.css);
 @import url(../blocks/popup-ticket/__one-full/_last-child/popup-ticket__one-full_last-child.css);
+@import url(../blocks/popup-ticket/__one-full/_active/popup-ticket__one-full_active.css);
 @import url(../blocks/popup-ticket/__one-full-text/popup-ticket__one-full-text.css);
 @import url(../blocks/popup-ticket/__one-full-text/_margin/popup-ticket__one-full-text_margin.css);
 @import url(../blocks/popup-ticket/__one-full-text/_margin_none/popup-ticket__one-full-text_margin_none.css);
@@ -45,6 +46,16 @@
 @import url(../blocks/popup-ticket/__pricing-plans-text/popup-ticket__pricing-plans-text.css);
 @import url(../blocks/popup-ticket/__type-train/popup-ticket__type-train.css);
 @import url(../blocks/popup-ticket/__passenger/popup-ticket__passenger.css);
+@import url(../blocks/popup-ticket/__passenger/_active/popup-ticket__passenger_active.css);
 @import url(../blocks/popup-ticket/__passenger/_background/popup-ticket__passenger_background.css);
 @import url(../blocks/popup-ticket/__radio-input/popup-ticket__radio-input.css);
 @import url(../blocks/popup-ticket/__radio-button/popup-ticket__radio-button.css);
+@import url(../blocks/popup-benefits/popup-benefits.css);
+@import url(../blocks/popup-benefits/__form/popup-benefits__form.css);
+@import url(../blocks/popup-benefits/__form-top/popup-benefits__form-top.css);
+@import url(../blocks/popup-benefits/__title/popup-benefits__title.css);
+@import url(../blocks/popup-benefits/__benefit/popup-benefits__benefit.css);
+@import url(../blocks/popup-benefits/__form-bottom/popup-benefits__form-bottom.css);
+@import url(../blocks/popup-benefits/__button/popup-benefits__button.css);
+@import url(../blocks/popup-benefits/__button/_submit/popup-benefits__button_submit.css);
+@import url(../blocks/popup-benefits/__radio-button/popup-benefits__radio-button.css);

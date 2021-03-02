@@ -27,10 +27,10 @@
     </div>
     <div class="popup-cities__footer">
       <div class="popup-cities__footer-left">
-        <button type="button" class="button popup-cities__previous button_disabled disabled" aria-label="#">Предыдущие</button>
-        <button type="button" class="button popup-cities__search" aria-label="#">Поиск</button>
+        <button type="button" class="button popup-cities__previous button_disabled disabled" aria-label="Предыдущие">Предыдущие</button>
+        <button type="button" class="button popup-cities__search" aria-label="Поиск">Поиск</button>
       </div>
-      <button type="button" class="button popup-cities__next" aria-label="#">Следующие</button>
+      <button type="button" class="button popup-cities__next" aria-label="Следующие">Следующие</button>
     </div>
   </section>
   <section class="popup popup-ticket">
@@ -44,14 +44,14 @@
     <div class="popup-ticket__main">
       <div class="popup-ticket__main-content">
         <div class="popup-ticket__tickets">
-          <div class="popup-ticket__one-full">
+          <div class="popup-ticket__one-full popup-ticket__one">
             <p class="popup-ticket__one-full-text popup-ticket__one-full-text_margin">РАЗ ПОЛНЫЙ</p>
-            <p class="popup-ticket__one-full-text">Цена: <span>225,00</span> руб.</p>
+            <p class="popup-ticket__one-full-text">Цена: <span class="popup-ticket__one-price">225,00</span> руб.</p>
           </div>
-          <div class="popup-ticket__one-full popup-ticket__one-full_last-child">
+          <div class="popup-ticket__one-full popup-ticket__one-full_last-child popup-ticket__two">
             <p class="popup-ticket__one-full-text popup-ticket__one-full-text_margin_none">РАЗ ПОЛНЫЙ</p>
             <p class="popup-ticket__one-full-text popup-ticket__one-full-text_small">ТУДА ОБРАТНО</p>
-            <p class="popup-ticket__one-full-text">Цена: <span>550,00</span> руб.</p>
+            <p class="popup-ticket__one-full-text">Цена: <span class="popup-ticket__one-full-price">550,00</span> руб.</p>
           </div>
           <div class="popup-ticket__benefits-align">
             <button type="button" class="popup-ticket__benefits" aria-label="Льготы">Оформить льготный документ</button>
@@ -60,11 +60,11 @@
         <div class="popup-ticket__pricing-plans">
           <p class="popup-ticket__pricing-plans-text">Тарифы</p>
           <div class="popup-ticket__type-train">
-            <div class="popup-ticket__passenger popup-ticket__passenger_background">
+            <div class="popup-ticket__passenger popup-ticket-passenger popup-ticket__passenger_active popup-ticket__passenger_background">
               <input class="popup-ticket__radio-input" id="passenger" type="radio" name="type-ticket" value="Пассажирский" checked>
               <label class="popup-ticket__radio-button" for="passenger">Пассажирский</label>
             </div>
-            <div class="popup-ticket__passenger popup-ticket__passenger_chek">
+            <div class="popup-ticket__passenger popup-ticket-soon">
               <input class="popup-ticket__radio-input" id="soon" type="radio" name="type-ticket" value="Скорый">
               <label class="popup-ticket__radio-button" for="soon">Скорый</label>
             </div>
@@ -74,11 +74,38 @@
     </div>
     <div class="popup-cities__footer popup-cities__footer_small_padding">
       <div class="popup-cities__footer-left">
-        <button type="button" class="button popup-cities__previous popup-cities__previous_background_color" aria-label="#">К выбору станции</button>
-        <button type="button" class="button popup-cities__search" aria-label="#">Выбрать дату</button>
+        <button type="button" class="button popup-cities__previous popup-cities__previous_background_color" aria-label="К выбору станции">К выбору станции</button>
+        <button type="button" class="button popup-cities__search" aria-label="Выбрать дату">Выбрать дату</button>
       </div>
-      <button type="button" class="button popup-cities__next popup-cities__next_color_red" aria-label="#">К оплате</button>
+      <button type="button" class="button popup-cities__next popup-cities__next_color_red" aria-label="К оплате" disabled>К оплате</button>
     </div>
+  </section>
+  <section class="popup popup-benefits">
+    <form class="popup-benefits__form" name="benefits">
+      <div class="popup-benefits__form-top">
+        <h2 class="popup-benefits__title">Выберите тип льготы</h2>
+        <div class="popup-benefits__benefit">
+          <input class="popup-ticket__radio-input" id="retiree" type="radio" name="type-benefits" value="пенсионер" checked>
+          <label class="popup-ticket__radio-button popup-benefits__radio-button" for="retiree">Пенсионер</label>
+        </div>
+        <div class="popup-benefits__benefit">
+          <input class="popup-ticket__radio-input" id="student" type="radio" name="type-benefits" value="студент">
+          <label class="popup-ticket__radio-button popup-benefits__radio-button" for="student">Студент</label>
+        </div>
+        <div class="popup-benefits__benefit">
+          <input class="popup-ticket__radio-input" id="schoolboy" type="radio" name="type-benefits" value="школьник">
+          <label class="popup-ticket__radio-button popup-benefits__radio-button" for="schoolboy">Школьник</label>
+        </div>
+        <div class="popup-benefits__benefit">
+          <input class="popup-ticket__radio-input" id="child" type="radio" name="type-benefits" value="ребёнок до 7 лет">
+          <label class="popup-ticket__radio-button popup-benefits__radio-button" for="child">Ребёнок до 7 лет</label>
+        </div>
+      </div>
+      <div class="popup-benefits__form-bottom">
+        <button type="reset" class="button popup-benefits__button" aria-label="Отмена">Отмена</button>
+        <button type="submit" class="button popup-benefits__button popup-benefits__button_submit" aria-label="ОК">ОК</button>
+      </div>
+    </form>
   </section>
 </main>
 <template class="template-cities">

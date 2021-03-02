@@ -1,0 +1,20 @@
+.popup-benefits__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100vw / (1200 / 370));
+  height: calc(100vw / (1200 / 438));
+  border: calc(100vw / 240) solid #145799;
+  border-radius: calc(100vw / 120);
+  background-color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .popup-benefits__form {
+    width: 370px;
+    height: 438px;
+    border: 5px solid #145799;;
+    border-radius: 10px;
+  }
+}

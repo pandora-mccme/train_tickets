@@ -1,0 +1,14 @@
+.popup-benefits {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: calc(100vw / 7.55);
+  background-color: rgba(0,0,0, 0.8);
+  height: calc(100vw / 2.49);
+}
+
+@media screen and (min-width: 1200px){
+  .popup-benefits {
+    top: 160px;
+  }
+}

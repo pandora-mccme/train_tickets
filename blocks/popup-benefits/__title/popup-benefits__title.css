@@ -1,0 +1,14 @@
+.popup-benefits__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(100vw / (1200 / 30));
+  line-height: 1.17;
+  margin: calc(100vw / 120) 0 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .popup-benefits__title {
+    font-size: 30px;
+    margin: 10px 0 0;
+  }
+}
