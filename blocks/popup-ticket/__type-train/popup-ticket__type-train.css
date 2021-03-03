@@ -5,6 +5,7 @@
   background-color: #A7BFFC;
   border-radius: calc(100vw / 120);
   margin-top: calc(100vw / (1200 / 11));
+  color: #fff;
 }
 
 @media screen and (min-width: 1200px){
