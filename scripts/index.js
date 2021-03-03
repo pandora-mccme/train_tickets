@@ -2,6 +2,7 @@ const popUpStart = document.querySelector('.popup-start');
 const popUpCities = document.querySelector('.popup-cities');
 const popUpTicket = document.querySelector('.popup-ticket');
 const popUpBenefits = document.querySelector('.popup-benefits');
+const popUpDate = document.querySelector('.popup-date');
 const cityButton = document.querySelector('.template-cities').content;
 const citiesContent = popUpCities.querySelector('.popup-cities__content');
 const citiesObj = {}
@@ -136,6 +137,7 @@ const popupTicketRate = popUpTicket.querySelector('.popup-ticket__rate');
 const popupTicketRadioInputPassenger = popUpTicket.querySelector('#passenger');
 const popupTicketBenefits = popUpTicket.querySelector('.popup-ticket__benefits');
 const popUpFormBenefits = document.forms.benefits;
+const popUpFormDate = document.forms.date;
 const popupTicketBenefitText = popUpTicket.querySelector('.popup-ticket__benefit');
 const benefit = {
   no: {
@@ -167,6 +169,7 @@ const benefits = {
   child: 'ребёнок до 7 лет'
 };
 let soon = false;
+const popupDataButton = popUpTicket.querySelector('.popup-cities__search');
 
 cities.forEach(obj => {
   obj.benefit = benefit;
@@ -339,3 +342,6 @@ popUpBenefits.addEventListener('click', handleClickOnOverlay);
 popUpFormBenefits.addEventListener('click', (evt) => clickOnBenefit(evt));
 popUpFormBenefits.addEventListener('reset', () => closePopUp(popUpBenefits));
 popUpFormBenefits.addEventListener('submit', addBenefit);
+popupDataButton.addEventListener('click', () => openPopUp(popUpDate));
+popUpDate.addEventListener('click', handleClickOnOverlay);
+popUpFormDate.addEventListener('reset', () => closePopUp(popUpDate));
