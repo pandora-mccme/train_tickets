@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: #C4C4C4;
+  background-color: #E6E7E9;
   border-radius: 0 0 calc(100vw / 60) calc(100vw / 60);
   padding: calc(100vw / 60) 0;
   font-style: normal;

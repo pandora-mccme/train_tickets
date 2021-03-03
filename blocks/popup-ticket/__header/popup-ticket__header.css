@@ -1,7 +1,7 @@
 .popup-ticket__header {
   width: 100%;
   height: calc(100vw / (1200 / 112));
-  background-color: #D8D8D8;
+  background-color: #fff;
   border-radius: calc(100vw / 60) calc(100vw / 60) 0 0;
 }
 

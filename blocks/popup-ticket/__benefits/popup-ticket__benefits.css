@@ -1,6 +1,6 @@
 .popup-ticket__benefits {
   height: calc(100vw / (1200 / 35));
-  background-color: #3559B5;
+  background-color: #145799;
   border-radius: calc(100vw / 120);
   border: none;
   padding: calc(100vw / (1200 / 7)) calc(100vw / (1200 / 4));
