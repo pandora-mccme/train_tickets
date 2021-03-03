@@ -4,6 +4,7 @@ const popUpTicket = document.querySelector('.popup-ticket');
 const popUpBenefits = document.querySelector('.popup-benefits');
 const popUpDate = document.querySelector('.popup-date');
 const cityButton = document.querySelector('.template-cities').content;
+const calendar = document.querySelector('.template-dates').content;
 const citiesContent = popUpCities.querySelector('.popup-cities__content');
 const citiesObj = {}
 const popUpCitiesPrevious = popUpCities.querySelector('.popup-cities__previous');
@@ -170,10 +171,18 @@ const benefits = {
 };
 let soon = false;
 const popupDataButton = popUpTicket.querySelector('.popup-cities__search');
+const days = ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'];
+const dayContent = popUpDate.querySelector('.popup-date__dates');
+const numbers = [];
+const popupTicketDate = popUpTicket.querySelector('.popup-ticket__date');
 
 cities.forEach(obj => {
   obj.benefit = benefit;
 });
+
+for (let i=1; i<=31; i++) {
+  numbers.push(i);
+}
 
 function createObjCities() {
   const objElement = (cities.length - cities.length % 15) / 15;
@@ -317,6 +326,67 @@ function addPrices() {
   else addPrice(Math.floor(Number(city.price) * city.benefit[benefit].passenger));
 }
 
+function addDay(item) {
+  const day = calendar.querySelector('.popup-date__day').cloneNode(true);
+  day.textContent = item;
+  return day;
+}
+
+const initialDayElements = days.map(addDay);
+dayContent.append(...initialDayElements);
+
+function addNumber(item) {
+  const number = calendar.querySelector('.popup-date__number').cloneNode(true);
+  const numberInput = number.querySelector('.popup-date__radio-input');
+  const numberButton = number.querySelector('.popup-date__radio-button');
+  numberInput.id = item;
+  numberInput.value = item;
+  numberButton.setAttribute('for', item);
+  numberButton.textContent = item;
+  if (item === 2) numberInput.checked = true;
+  if (item < 2 || item > 8) numberInput.setAttribute('disabled', 'true');
+  return number;
+}
+
+const initialNumberElements = numbers.map(addNumber);
+dayContent.append(...initialNumberElements);
+
+let idElement = '';
+const divElement = popUpFormDate.querySelectorAll('.popup-date__number');
+
+function activeChecked() {
+  divElement.forEach(item => {
+    const input = item.querySelector('.popup-date__radio-input');
+    if (input.checked) {
+      idElement = input.id;
+    }
+  });
+}
+
+function resetFormCalendar(evt) {
+  evt.preventDefault();
+  divElement.forEach(item => {
+    const input = item.querySelector('.popup-date__radio-input');
+    if (input.id === idElement) {
+      input.checked = true;
+    }
+  });
+  closePopUp(popUpDate);
+}
+
+function saveFormCalendar(evt) {
+  evt.preventDefault();
+  divElement.forEach(item => {
+    const input = item.querySelector('.popup-date__radio-input');
+    if (input.checked) {
+      idElement = input.id;
+    }
+  });
+  if (Number(idElement) < 10) popupTicketDate.textContent = '0' + idElement;
+  else popupTicketDate.textContent = idElement;
+  closePopUp(popUpDate);
+}
+
 
 popUpStart.addEventListener('click', (evt) => {
   handleClickOnPopUp(evt);
@@ -342,6 +412,10 @@ popUpBenefits.addEventListener('click', handleClickOnOverlay);
 popUpFormBenefits.addEventListener('click', (evt) => clickOnBenefit(evt));
 popUpFormBenefits.addEventListener('reset', () => closePopUp(popUpBenefits));
 popUpFormBenefits.addEventListener('submit', addBenefit);
-popupDataButton.addEventListener('click', () => openPopUp(popUpDate));
+popupDataButton.addEventListener('click', () => {
+  openPopUp(popUpDate);
+  activeChecked();
+});
 popUpDate.addEventListener('click', handleClickOnOverlay);
-popUpFormDate.addEventListener('reset', () => closePopUp(popUpDate));
+popUpFormDate.addEventListener('reset', (evt) => resetFormCalendar(evt));
+popUpFormDate.addEventListener('submit', (evt) => saveFormCalendar(evt));

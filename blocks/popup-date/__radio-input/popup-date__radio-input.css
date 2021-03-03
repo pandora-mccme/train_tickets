@@ -1,0 +1,15 @@
+.popup-date__radio-input {
+  display: none;
+}
+
+.popup-date__radio-input:checked + .popup-date__radio-button {
+  color: #A60A0A;
+;
+}
+
+.popup-date__radio-input:disabled + .popup-date__radio-button::before {
+  background: #C8C8C8;
+}
+
+
+

@@ -38,7 +38,7 @@
       <h2 class="popup-ticket__title">Баранур -> <span class="popup-ticket__city">Веснушкино</span></h2>
       <p class="popup-ticket__parameters">Льгота: <span class="popup-ticket__benefit">нет</span></p>
       <p class="popup-ticket__parameters">Тариф: <span class="popup-ticket__rate">ПАССАЖИРСКИЙ</span></p>
-      <p class="popup-ticket__parameters">Дата проезда: <span class="popup-ticket__date">02.03.2021</span></p>
+      <p class="popup-ticket__parameters">Дата проезда: <span class="popup-ticket__date">02</span>.03.2021</p>
 
     </div>
     <div class="popup-ticket__main">
@@ -112,7 +112,8 @@
       <div class="popup-benefits__form-top">
         <h2 class="popup-benefits__title">Выберите дату поездки</h2>
         <div class="popup-date__calendar">
-
+          <p class="popup-date__month">Март</p>
+          <div class="popup-date__dates"></div>
         </div>
       </div>
       <div class="popup-benefits__form-bottom">
@@ -124,6 +125,13 @@
 </main>
 <template class="template-cities">
   <button type="button" class="button popup-cities__city" aria-label="город"></button>
+</template>
+<template class="template-dates">
+  <p class="popup-date__day"></p>
+  <div class="popup-date__number">
+    <input class="popup-date__radio-input" id="id" type="radio" name="days" value="1">
+    <label class="popup-date__radio-button" for="id"></label>
+  </div>
 </template>
 </body>
 </html>

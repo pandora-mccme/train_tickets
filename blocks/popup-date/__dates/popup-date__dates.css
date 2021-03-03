@@ -1,0 +1,15 @@
+.popup-date__dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: calc(100vw / (1200 / 7)) calc(100vw / (1200 / 12));
+  font-size: calc(100vw / (1200 / 18));
+  padding: calc(100vw / (1200 / 4)) calc(100vw / (1200 / 18)) calc(100vw / 120);
+}
+
+@media screen and (min-width: 1200px){
+  .popup-date__dates {
+    font-size: 18px;
+    padding: 4px 18px 10px;
+    gap: 7px 12px;
+  }
+}

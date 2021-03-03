@@ -1,0 +1,36 @@
+.popup-date__radio-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  width: calc(100vw / 40);
+  height: calc(100vw / 40);
+  z-index: 0;
+}
+
+.popup-date__radio-button::before {
+  content: "";
+  display: inline-block;
+  width: calc(100vw / 40);
+  height: calc(100vw / 40);
+  border-radius: calc(100vw / (1200 / 15));
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #F9F9F9;
+  z-index: -1;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-date__radio-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .popup-date__radio-button::before {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+  }
+}

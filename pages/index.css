@@ -60,3 +60,8 @@
 @import url(../blocks/popup-benefits/__button/_submit/popup-benefits__button_submit.css);
 @import url(../blocks/popup-benefits/__radio-button/popup-benefits__radio-button.css);
 @import url(../blocks/popup-date/__calendar/popup-date__calendar.css);
+@import url(../blocks/popup-date/__month/popup-date__month.css);
+@import url(../blocks/popup-date/__dates/popup-date__dates.css);
+@import url(../blocks/popup-date/__day/popup-date__day.css);
+@import url(../blocks/popup-date/__radio-input/popup-date__radio-input.css);
+@import url(../blocks/popup-date/__radio-button/popup-date__radio-button.css);

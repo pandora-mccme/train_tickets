@@ -1,0 +1,14 @@
+.popup-date__month {
+  font-size: calc(100vw / (1200 / 24));
+  background-color: #145799;
+  color: #F9F9F9;
+  border-radius: calc(100vw / 120);
+  margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .popup-date__month {
+    font-size: 24px;
+    border-radius: 10px;
+  }
+}
