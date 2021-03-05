@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Имитационный блок - билеты на электричку</title>
-  <link rel="stylesheet" href="./pages/index.css?v2.1">
+  <link rel="stylesheet" href="./pages/index.css?v2.2">
   <script src="scripts/index.js?v1.0" defer></script>
 </head>
 <body>
@@ -39,19 +39,18 @@
       <p class="popup-ticket__parameters">Льгота: <span class="popup-ticket__benefit">нет</span></p>
       <p class="popup-ticket__parameters">Тариф: <span class="popup-ticket__rate">ПАССАЖИРСКИЙ</span></p>
       <p class="popup-ticket__parameters">Дата проезда: <span class="popup-ticket__date">02</span>.03.2021</p>
-
     </div>
     <div class="popup-ticket__main">
       <div class="popup-ticket__main-content">
         <div class="popup-ticket__tickets">
           <div class="popup-ticket__one-full popup-ticket__one">
             <p class="popup-ticket__one-full-text popup-ticket__one-full-text_margin">РАЗ ПОЛНЫЙ</p>
-            <p class="popup-ticket__one-full-text">Цена: <span class="popup-ticket__one-price">225,00</span> руб.</p>
+            <p class="popup-ticket__one-full-text">Цена: <span class="popup-ticket__one-price popup-ticket__price">225,00</span> руб.</p>
           </div>
           <div class="popup-ticket__one-full popup-ticket__one-full_last-child popup-ticket__two">
             <p class="popup-ticket__one-full-text popup-ticket__one-full-text_margin_none">РАЗ ПОЛНЫЙ</p>
             <p class="popup-ticket__one-full-text popup-ticket__one-full-text_small">ТУДА ОБРАТНО</p>
-            <p class="popup-ticket__one-full-text">Цена: <span class="popup-ticket__one-full-price">550,00</span> руб.</p>
+            <p class="popup-ticket__one-full-text">Цена: <span class="popup-ticket__one-full-price popup-ticket__price">550,00</span> руб.</p>
           </div>
           <div class="popup-ticket__benefits-align">
             <button type="button" class="popup-ticket__benefits" aria-label="Льготы">Оформить льготный документ</button>
@@ -77,7 +76,7 @@
         <button type="button" class="button popup-cities__previous popup-cities__previous_background_color" aria-label="К выбору станции">К выбору станции</button>
         <button type="button" class="button popup-cities__search" aria-label="Выбрать дату">Выбрать дату</button>
       </div>
-      <button type="button" class="button popup-cities__next popup-cities__next_color_red" aria-label="К оплате" disabled>К оплате</button>
+      <button type="button" class="button popup-cities__next popup-cities__next_color_red" aria-label="К оплате">К оплате</button>
     </div>
   </section>
   <section class="popup popup-benefits">
@@ -121,6 +120,21 @@
         <button type="submit" class="button popup-benefits__button popup-benefits__button_submit" aria-label="ОК">ОК</button>
       </div>
     </form>
+  </section>
+  <section class="popup popup-to-be-paid">
+    <h2 class="popup-to-be-paid__title">Ваш билет:</h2>
+    <div class="popup-to-be-paid__content">
+      <p class="popup-to-be-paid__city">Баранур -> <span class="popup-ticket__city">Веснушкино</span></p>
+      <p class="popup-to-be-paid__parameters popup-to-be-paid__parameters_direction">Туда обратно</p>
+      <p class="popup-to-be-paid__parameters">Льгота: <span class="popup-ticket__benefit">нет</span></p>
+      <p class="popup-to-be-paid__parameters">Тариф: <span class="popup-ticket__rate">ПАССАЖИРСКИЙ</span></p>
+      <p class="popup-to-be-paid__parameters">Дата проезда: <span class="popup-ticket__date">02</span>.03.2021</p>
+      <p class="popup-to-be-paid__total">К оплате: <span class="popup-ticket__total">396</span>,00 руб.</p>
+    </div>
+    <div class="popup-to-be-paid__footer">
+      <button type="button" class="button popup-to-be-paid__back" aria-label="Назад">Назад</button>
+      <button type="button" class="button popup-to-be-paid__confirm" aria-label="Подтвердить" disabled>Подтвердить</button>
+    </div>
   </section>
 </main>
 <template class="template-cities">

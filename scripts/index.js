@@ -3,6 +3,7 @@ const popUpCities = document.querySelector('.popup-cities');
 const popUpTicket = document.querySelector('.popup-ticket');
 const popUpBenefits = document.querySelector('.popup-benefits');
 const popUpDate = document.querySelector('.popup-date');
+const popUpToBePaid = document.querySelector('.popup-to-be-paid');
 const cityButton = document.querySelector('.template-cities').content;
 const calendar = document.querySelector('.template-dates').content;
 const citiesContent = popUpCities.querySelector('.popup-cities__content');
@@ -175,6 +176,15 @@ const days = ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'];
 const dayContent = popUpDate.querySelector('.popup-date__dates');
 const numbers = [];
 const popupTicketDate = popUpTicket.querySelector('.popup-ticket__date');
+const toBePaid = popUpTicket.querySelector('.popup-cities__next');
+const popupTotalCity = popUpToBePaid.querySelector('.popup-ticket__city');
+const totalDirection = popUpToBePaid.querySelector('.popup-to-be-paid__parameters_direction');
+const totalBenefit = popUpToBePaid.querySelector('.popup-ticket__benefit');
+const totalRate = popUpToBePaid.querySelector('.popup-ticket__rate');
+const totalDate = popUpToBePaid.querySelector('.popup-ticket__date');
+const totalTotal = popUpToBePaid.querySelector('.popup-ticket__total');
+const buttonBack = popUpToBePaid.querySelector('.popup-to-be-paid__back');
+const popUpTotalButton = popUpTicket.querySelector('.popup-cities__next');
 
 cities.forEach(obj => {
   obj.benefit = benefit;
@@ -234,6 +244,7 @@ function handleClickOnCity(evt) {
     addPrices();
     popupTicketRate.textContent = 'ПАССАЖИРСКИЙ';
     popupTicketRadioInputPassenger.checked = true;
+    activeButtonTotal();
     openPopUp(popUpTicket);
   }
 }
@@ -387,6 +398,28 @@ function saveFormCalendar(evt) {
   closePopUp(popUpDate);
 }
 
+function transferToBePaid() {
+  const popupCity = popUpTicket.querySelector('.popup-ticket__city');
+  const benefit = popUpTicket.querySelector('.popup-ticket__benefit');
+  const rate = popUpTicket.querySelector('.popup-ticket__rate');
+  const date = popUpTicket.querySelector('.popup-ticket__date');
+  const choice =  popUpTicket.querySelector('.popup-ticket__one-full_active');
+  const direction = choice.querySelector('.popup-ticket__one-full-text_small');
+  const total = choice.querySelector('.popup-ticket__price');
+  popupTotalCity.textContent = popupCity.textContent;
+  totalBenefit.textContent = benefit.textContent;
+  totalRate.textContent = rate.textContent;
+  totalDate.textContent = date.textContent;
+  if (direction) totalDirection.textContent = 'Туда обратно';
+  else totalDirection.textContent = 'Туда';
+  totalTotal.textContent = total.textContent;
+}
+
+function activeButtonTotal() {
+  const choice =  popUpTicket.querySelector('.popup-ticket__one-full_active');
+  popUpTotalButton.disabled = !choice;
+}
+
 
 popUpStart.addEventListener('click', (evt) => {
   handleClickOnPopUp(evt);
@@ -399,8 +432,14 @@ popupCityPreviousButton.addEventListener('click', () => {
   closePopUp(popUpTicket);
   openPopUp(popUpCities);
 });
-popupTicketOne.addEventListener('click', addOnePopUpTicketOneFull);
-popupTicketTwo.addEventListener('click', addTwoPopUpTicketOneFull);
+popupTicketOne.addEventListener('click', () => {
+  addOnePopUpTicketOneFull();
+  activeButtonTotal();
+});
+popupTicketTwo.addEventListener('click', () => {
+  addTwoPopUpTicketOneFull();
+  activeButtonTotal();
+});
 popupTicketSoon.addEventListener('click', (evt) => {
   clickOnRate(evt, 'СКОРЫЙ');
 });
@@ -419,3 +458,12 @@ popupDataButton.addEventListener('click', () => {
 popUpDate.addEventListener('click', handleClickOnOverlay);
 popUpFormDate.addEventListener('reset', (evt) => resetFormCalendar(evt));
 popUpFormDate.addEventListener('submit', (evt) => saveFormCalendar(evt));
+toBePaid.addEventListener('click', () => {
+  transferToBePaid();
+  closePopUp(popUpTicket);
+  openPopUp(popUpToBePaid);
+});
+buttonBack.addEventListener('click', () => {
+  closePopUp(popUpToBePaid);
+  openPopUp(popUpTicket);
+})

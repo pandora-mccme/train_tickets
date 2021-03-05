@@ -1,0 +1,16 @@
+.popup-to-be-paid__title {
+  width: calc(100vw / (1200 / 658));
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(100vw / (1200 / 36));
+  line-height: 1.17;
+  color: #6C6C6C;
+  margin: 0;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-to-be-paid__title {
+    width: 658px;
+    font-size: 36px;
+  }
+}

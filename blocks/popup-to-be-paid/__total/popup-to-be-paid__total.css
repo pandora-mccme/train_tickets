@@ -1,0 +1,10 @@
+.popup-to-be-paid__total {
+  font-size: calc(100vw / (1200 / 30));
+  text-align: right;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-to-be-paid__total {
+    font-size: 30px;
+  }
+}

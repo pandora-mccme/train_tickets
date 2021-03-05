@@ -65,3 +65,12 @@
 @import url(../blocks/popup-date/__day/popup-date__day.css);
 @import url(../blocks/popup-date/__radio-input/popup-date__radio-input.css);
 @import url(../blocks/popup-date/__radio-button/popup-date__radio-button.css);
+@import url(../blocks/popup-to-be-paid/popup-to-be-paid.css);
+@import url(../blocks/popup-to-be-paid/__title/popup-to-be-paid__title.css);
+@import url(../blocks/popup-to-be-paid/__content/popup-to-be-paid__content.css);
+@import url(../blocks/popup-to-be-paid/__city/popup-to-be-paid__city.css);
+@import url(../blocks/popup-to-be-paid/__parameters/popup-to-be-paid__parameters.css);
+@import url(../blocks/popup-to-be-paid/__total/popup-to-be-paid__total.css);
+@import url(../blocks/popup-to-be-paid/__footer/popup-to-be-paid__footer.css);
+@import url(../blocks/popup-to-be-paid/__back/popup-to-be-paid__back.css);
+@import url(../blocks/popup-to-be-paid/__confirm/popup-to-be-paid__confirm.css);

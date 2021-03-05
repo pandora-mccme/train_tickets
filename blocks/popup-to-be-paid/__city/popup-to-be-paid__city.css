@@ -1,0 +1,10 @@
+.popup-to-be-paid__city {
+  font-size: calc(100vw / (1200 / 36));
+  margin: 0;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-to-be-paid__city {
+    font-size: 36px;
+  }
+}

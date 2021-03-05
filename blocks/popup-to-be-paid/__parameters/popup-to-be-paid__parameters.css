@@ -1,0 +1,12 @@
+.popup-to-be-paid__parameters {
+  font-size: calc(100vw / (1200 / 24));
+  color: #6C6C6C;
+  margin: calc(100vw / 100) 0 0;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-to-be-paid__parameters {
+    margin: 12px 0 0;
+    font-size: 24px;
+  }
+}

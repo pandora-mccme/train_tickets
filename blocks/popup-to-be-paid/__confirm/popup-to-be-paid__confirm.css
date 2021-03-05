@@ -1,0 +1,11 @@
+.popup-to-be-paid__confirm {
+  width: calc(100vw / (1200 / 139));
+  background-color: #8CBB37;
+  color: #fff;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-to-be-paid__confirm {
+    width: 139px;
+  }
+}

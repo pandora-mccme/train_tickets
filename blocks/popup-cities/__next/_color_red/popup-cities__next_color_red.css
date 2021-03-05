@@ -1,3 +1,7 @@
 .popup-cities__next_color_red {
   background-color: #D75454;
 }
+
+.popup-cities__next_color_red:disabled {
+  background-color: rgba(0, 0, 0, 0.2);
+}

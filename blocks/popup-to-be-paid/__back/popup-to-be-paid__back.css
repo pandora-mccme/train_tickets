@@ -1,0 +1,11 @@
+.popup-to-be-paid__back {
+  width: calc(100vw / (1200 / 139));
+  background-color: #D75454;
+  color: #fff;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-to-be-paid__back {
+    width: 139px;
+  }
+}

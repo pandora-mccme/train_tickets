@@ -1,0 +1,6 @@
+.popup-to-be-paid {
+  background-color: #E6E7E9;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
