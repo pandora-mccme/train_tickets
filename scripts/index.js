@@ -127,6 +127,7 @@ const cities = [
     price: '30'
   }
 ];
+cities.reverse();
 const popupTicketCity = popUpTicket.querySelector('.popup-ticket__city');
 const popupCityPreviousButton = popUpTicket.querySelector('.popup-cities__previous');
 const popupTicketSoon = popUpTicket.querySelector('.popup-ticket-soon');
