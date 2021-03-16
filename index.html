@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Имитационный блок - билеты на электричку</title>
   <link rel="stylesheet" href="./pages/index.css?v2.3">
-  <script src="scripts/index.js?v1.1" defer></script>
+  <script src="scripts/index.js?v1.2" defer></script>
 </head>
 <body>
 <main class="page">
@@ -36,7 +36,7 @@
   <section class="popup popup-ticket">
     <div class="popup-ticket__header">
       <h2 class="popup-ticket__title">Баранур -> <span class="popup-ticket__city">Веснушкино</span></h2>
-      <p class="popup-ticket__parameters">Льгота: <span class="popup-ticket__benefit">нет</span></p>
+      <p class="popup-ticket__parameters">Льгота: <span class="popup-ticket__benefit">нет льготы</span></p>
       <p class="popup-ticket__parameters">Тариф: <span class="popup-ticket__rate">ПАССАЖИРСКИЙ</span></p>
       <p class="popup-ticket__parameters">Дата проезда: <span class="popup-ticket__date">02</span>.03.2021</p>
     </div>
@@ -84,7 +84,11 @@
       <div class="popup-benefits__form-top">
         <h2 class="popup-benefits__title">Выберите тип льготы</h2>
         <div class="popup-benefits__benefit">
-          <input class="popup-ticket__radio-input" id="retiree" type="radio" name="type-benefits" value="пенсионер" checked>
+          <input class="popup-ticket__radio-input" id="no-benefit" type="radio" name="type-benefits" value="нет льготы" checked>
+          <label class="popup-ticket__radio-button popup-benefits__radio-button" for="no-benefit">Нет льготы</label>
+        </div>
+        <div class="popup-benefits__benefit">
+          <input class="popup-ticket__radio-input" id="retiree" type="radio" name="type-benefits" value="пенсионер">
           <label class="popup-ticket__radio-button popup-benefits__radio-button" for="retiree">Пенсионер</label>
         </div>
         <div class="popup-benefits__benefit">

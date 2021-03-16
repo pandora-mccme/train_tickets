@@ -160,12 +160,12 @@ const benefit = {
     soon: 0.7
   },
   child: {
-    passenger: 0.5,
-    soon: 0.5
+    passenger: 0,
+    soon: 0
   }
 };
 const benefits = {
-  no: 'нет',
+  no: 'нет льготы',
   retiree: 'пенсионер',
   student: 'студент',
   schoolboy: 'школьник',
