@@ -13,13 +13,13 @@ const popUpCitiesNext = popUpCities.querySelector('.popup-cities__next');
 let key = 0;
 const cities = [
   {
-    name: 'Южный Аралабад',
+    name: 'Южный Болхов',
     rate: 'Скорый',
     price: '400',
     priceSoon: '600'
   },
   {
-    name: 'Северный Аралабад',
+    name: 'Северный Болхов',
     price: '380'
   },
   {
