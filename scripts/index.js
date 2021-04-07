@@ -432,6 +432,8 @@ popUpCities.addEventListener('click', handleClickOnCity);
 popupCityPreviousButton.addEventListener('click', () => {
   closePopUp(popUpTicket);
   openPopUp(popUpCities);
+  popupTicketTwo.classList.remove('popup-ticket__one-full_active');
+  popupTicketOne.classList.remove('popup-ticket__one-full_active');
 });
 popupTicketOne.addEventListener('click', () => {
   addOnePopUpTicketOneFull();
