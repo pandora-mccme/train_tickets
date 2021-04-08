@@ -1,0 +1,13 @@
+.popup-ticket__benefit {
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: calc(100vw / (1200 / 17));
+    line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px){
+    .popup-ticket__benefit {
+        font-size: 17px;
+    }
+}

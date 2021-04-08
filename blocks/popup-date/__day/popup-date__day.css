@@ -1,3 +1,14 @@
 .popup-date__day {
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(100vw / (1200 / 18));
+  line-height: 1.17;
   margin: 0;
+}
+
+@media screen and (min-width: 1200px){
+  .popup-date__calendar {
+    font-size: 18px;
+  }
 }

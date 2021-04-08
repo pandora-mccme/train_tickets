@@ -3,11 +3,17 @@
   background-color: #D75454;
   padding: 0 calc(100vw / 100);
   margin-right: calc(100vw / (1200 / 8));
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(100vw / (1200 / 18));
+  line-height: 1.17;
 }
 
 @media screen and (min-width: 1200px){
   .popup-cities__previous {
     padding: 0 12px;
     margin-right: 8px;
+    font-size: 18px;
   }
 }

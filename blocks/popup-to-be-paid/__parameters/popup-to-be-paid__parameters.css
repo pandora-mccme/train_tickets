@@ -1,5 +1,9 @@
 .popup-to-be-paid__parameters {
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: calc(100vw / (1200 / 24));
+  line-height: 1.17;
   color: #6C6C6C;
   margin: calc(100vw / 100) 0 0;
 }

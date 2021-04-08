@@ -1,5 +1,6 @@
 .popup-cities__city {
   background: #39B3D8;
+  font-family: Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: calc(100vw / (1200 / 18));

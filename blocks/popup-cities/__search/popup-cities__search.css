@@ -2,10 +2,16 @@
   color: #E9E9E9;
   background-color: #145799;
   padding: 0 calc(100vw / (1200 / 16));
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: calc(100vw / (1200 / 18));
+  line-height: 1.17;
 }
 
 @media screen and (min-width: 1200px){
   .popup-cities__search {
     padding: 0 16px;
+    font-size: 18px;
   }
 }

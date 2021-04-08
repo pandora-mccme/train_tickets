@@ -5,9 +5,7 @@
   border: calc(100vw / 240) solid #145799;
   border-radius: calc(100vw / 120);
   padding: calc(100vw / (1200 / 24)) calc(100vw / (1200 / 34));
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.17;
+
 }
 
 @media screen and (min-width: 1200px){

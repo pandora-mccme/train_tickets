@@ -6,10 +6,6 @@
   height: calc(100vw / 10);
   background-color: #39B3D8;
   border-radius: calc(100vw / 120);
-  font-style: normal;
-  font-weight: 500;
-  font-size: calc(100vw / (1200 / 18));
-  line-height: 1.17;
   color: #F9F9F9;
   margin: calc(100vw / (1200 / 13)) 0 0;
   text-align: center;
@@ -22,6 +18,5 @@
     height: 120px;
     border-radius: 10px;
     margin: 13px 0 0;
-    font-size: 18px;
   }
 }

@@ -2,15 +2,11 @@
   display: flex;
   justify-content: space-between;
   width: calc(100vw / (1200 / 658));
-  font-style: normal;
-  font-weight: bold;
-  font-size: calc(100vw / (1200 / 18));
-  line-height: 1.17;
+
 }
 
 @media screen and (min-width: 1200px){
   .popup-to-be-paid__footer {
     width: 658px;
-    font-size: 18px;
   }
 }

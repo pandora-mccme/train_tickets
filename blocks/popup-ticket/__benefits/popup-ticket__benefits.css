@@ -4,6 +4,7 @@
   border-radius: calc(100vw / 120);
   border: none;
   padding: calc(100vw / (1200 / 7)) calc(100vw / (1200 / 4));
+  font-family: Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: calc(100vw / (1200 / 18));

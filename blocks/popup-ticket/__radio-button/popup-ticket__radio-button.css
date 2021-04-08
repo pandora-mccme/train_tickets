@@ -3,6 +3,11 @@
   position: relative;
   padding-left: calc(100vw / (1200 / 35));
   cursor: pointer;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(100vw / (1200 / 18));
+  line-height: 1.17;
 }
 
 .popup-ticket__radio-button::before {
@@ -20,6 +25,7 @@
 @media screen and (min-width: 1200px){
   .popup-ticket__radio-button {
     padding-left: 35px;
+    font-size: 18px;
   }
 
   .popup-ticket__radio-button::before {

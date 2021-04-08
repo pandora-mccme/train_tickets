@@ -1,5 +1,9 @@
 .popup-date__month {
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: calc(100vw / (1200 / 24));
+  line-height: 1.17;
   background-color: #145799;
   color: #F9F9F9;
   border-radius: calc(100vw / 120);

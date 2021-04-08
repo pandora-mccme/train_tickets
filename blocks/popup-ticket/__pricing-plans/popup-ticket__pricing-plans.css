@@ -3,10 +3,7 @@
   height: calc(100vw / (1200 / 276));
   border-radius: 0 0 calc(100vw / 120) calc(100vw / 120);
   background-color: #32C5AA;
-  font-style: normal;
-  font-weight: 500;
-  font-size: calc(100vw / (1200 / 18));
-  line-height: 1.17;
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -14,6 +11,5 @@
     width: 190px;
     height: 276px;
     border-radius: 0 0 10px 10px;
-    font-size: 18px;
   }
 }

@@ -29,7 +29,11 @@
 @import url(../blocks/popup-ticket/popup-ticket.css);
 @import url(../blocks/popup-ticket/__header/popup-ticket__header.css);
 @import url(../blocks/popup-ticket/__title/popup-ticket__title.css);
+@import url(../blocks/popup-ticket/__city/popup-ticket__city.css);
 @import url(../blocks/popup-ticket/__parameters/popup-ticket__parameters.css);
+@import url(../blocks/popup-ticket/__benefit/popup-ticket__benefit.css);
+@import url(../blocks/popup-ticket/__rate/popup-ticket__rate.css);
+@import url(../blocks/popup-ticket/__date/popup-ticket__date.css);
 @import url(../blocks/popup-ticket/__main/popup-ticket__main.css);
 @import url(../blocks/popup-ticket/__main-content/popup-ticket__main-content.css);
 @import url(../blocks/popup-ticket/__tickets/popup-ticket__tickets.css);
