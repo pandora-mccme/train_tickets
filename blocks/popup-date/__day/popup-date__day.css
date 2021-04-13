@@ -8,7 +8,7 @@
 }
 
 @media screen and (min-width: 1200px){
-  .popup-date__calendar {
+  .popup-date__day {
     font-size: 18px;
   }
 }
