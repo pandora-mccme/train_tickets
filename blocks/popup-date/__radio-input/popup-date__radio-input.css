@@ -3,8 +3,11 @@
 }
 
 .popup-date__radio-input:checked + .popup-date__radio-button {
-  color: #A60A0A;
-;
+  color: #fff;
+}
+
+.popup-date__radio-input:checked + .popup-date__radio-button::before {
+  background-color: #145799;
 }
 
 .popup-date__radio-input:disabled + .popup-date__radio-button::before {

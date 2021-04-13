@@ -411,7 +411,7 @@ function transferToBePaid() {
   totalBenefit.textContent = benefit.textContent;
   totalRate.textContent = rate.textContent;
   totalDate.textContent = date.textContent;
-  if (direction) totalDirection.textContent = 'Туда обратно';
+  if (direction) totalDirection.textContent = 'Туда-Обратно';
   else totalDirection.textContent = 'Туда';
   totalTotal.textContent = total.textContent;
 }
