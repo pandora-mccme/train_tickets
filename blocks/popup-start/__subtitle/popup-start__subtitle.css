@@ -8,6 +8,7 @@
   margin: 0 auto;
   cursor: default;
   color: #E9E9E9;
+  text-indent: 0;
 }
 
 @media screen and (min-width: 1200px) {

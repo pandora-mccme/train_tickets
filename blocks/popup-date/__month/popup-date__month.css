@@ -8,6 +8,8 @@
   color: #F9F9F9;
   border-radius: calc(100vw / 120);
   margin: 0;
+  text-indent: 0;
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {

@@ -8,6 +8,7 @@
   text-align: center;
   cursor: default;
   margin: 0 auto;
+  text-indent: 0;
 }
 
 @media screen and (min-width: 1200px) {

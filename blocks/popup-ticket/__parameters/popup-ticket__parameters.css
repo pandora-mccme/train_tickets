@@ -6,6 +6,7 @@
   line-height: 1.17;
   color: #6C6C6C;
   margin: calc(100vw / 600) 0 0 calc(100vw / (1200 / 23));
+  text-indent: 0;
 }
 
 .popup-ticket__parameters:last-child {

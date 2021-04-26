@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #E6E7E9;
+  height: calc(100vw / (1200 / 244));
   border-radius: calc(100vw / 120);
   margin-top: calc(100vw / (1200 / 11));
   color: #fff;
