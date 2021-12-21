@@ -1,4 +1,5 @@
 .page {
+  zoom: 1.8;
   font-family: Roboto, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,5 +27,11 @@
 @media screen and (max-width: 320px) {
   .page {
     padding: 42px 0 0 27px;
+  }
+}
+
+@-moz-document url-prefix(){
+  .page {
+    transform: scale(1.8);
   }
 }
