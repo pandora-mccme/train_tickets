@@ -12,6 +12,8 @@ const popUpCitiesPrevious = popUpCities.querySelector('.popup-cities__previous')
 const popUpCitiesNext = popUpCities.querySelector('.popup-cities__next');
 const popUpTicketDateYear = document.querySelectorAll('.popup-ticket__date_year');
 const nowDate = new Date();
+const newDateMatch = new Date(nowDate.getFullYear(), 2, 1);
+
 let key = 0;
 const cities = [
   {
@@ -189,7 +191,6 @@ const totalTotal = popUpToBePaid.querySelector('.popup-ticket__total');
 const buttonBack = popUpToBePaid.querySelector('.popup-to-be-paid__back');
 const popUpTotalButton = popUpTicket.querySelector('.popup-cities__next');
 
-console.log(popUpTicketDateYear);
 popUpTicketDateYear.forEach((element) => {
   element.textContent = String(nowDate.getFullYear()).trim();
 });
@@ -366,6 +367,18 @@ function addNumber(item) {
   if (item < 2 || item > 8) numberInput.setAttribute('disabled', 'true');
   return number;
 }
+
+function addEmptyDiv() {
+  return document.createElement('div');
+}
+
+const initialEmptyDiv = [];
+
+for (let i=1; i<newDateMatch.getDay(); i++) {
+  initialEmptyDiv.push(addEmptyDiv());
+}
+
+dayContent.append(...initialEmptyDiv);
 
 const initialNumberElements = numbers.map(addNumber);
 dayContent.append(...initialNumberElements);
