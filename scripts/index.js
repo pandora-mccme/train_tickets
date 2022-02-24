@@ -10,6 +10,8 @@ const citiesContent = popUpCities.querySelector('.popup-cities__content');
 const citiesObj = {}
 const popUpCitiesPrevious = popUpCities.querySelector('.popup-cities__previous');
 const popUpCitiesNext = popUpCities.querySelector('.popup-cities__next');
+const popUpTicketDateYear = document.querySelectorAll('.popup-ticket__date_year');
+const nowDate = new Date();
 let key = 0;
 const cities = [
   {
@@ -186,6 +188,11 @@ const totalDate = popUpToBePaid.querySelector('.popup-ticket__date');
 const totalTotal = popUpToBePaid.querySelector('.popup-ticket__total');
 const buttonBack = popUpToBePaid.querySelector('.popup-to-be-paid__back');
 const popUpTotalButton = popUpTicket.querySelector('.popup-cities__next');
+
+console.log(popUpTicketDateYear);
+popUpTicketDateYear.forEach((element) => {
+  element.textContent = String(nowDate.getFullYear()).trim();
+});
 
 cities.forEach(obj => {
   obj.benefit = benefit;
