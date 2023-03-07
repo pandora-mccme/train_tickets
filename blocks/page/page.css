@@ -29,9 +29,3 @@
     padding: 42px 0 0 27px;
   }
 }
-
-@-moz-document url-prefix(){
-  .page {
-    transform: scale(1.3);
-  }
-}
